@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: install apachetop package
+    yum:
+      name: apachetop
+      state: absent
+
